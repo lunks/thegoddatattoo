@@ -54,24 +54,26 @@
           </div>
         </div>
       </nav>
-      <div id="intro" class="view">
-        <div class="mask rgba-black-strong">
-          <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-            <div class="row d-flex justify-content-center text-center">
-              <div class="col-md-10">
-                <!-- Heading -->
-                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">
-                  GODA TATTOO
-                </h2>
-              </div>
+      <div class="buda">
+        <div class="rgba-black-strong">
+            <div class="jumbotron row justify-content-center" style="background-color:inherit;">
+              <div class="row col-md-6 col-sm-12 align-content-center justify-content-center text-center">
+              <h1 class="display-4">GODA TATTOO</h1>
+              <p class="lead">
+                Gonzalo Damian Lopez aka GODA was already in his 19's a professional tattoo artist
+                from Montevideo he moved to Rio de Janeiro and nowadays he is based in Berlin.
+              </p>
+
+              <p class="lead">
+                GODA is member of several tattoo conventions all over Latin America and Europe.
+              </p>
             </div>
-          </div>
         </div>
       </div>
     </header>
     <main class="elegant-color-dark mt-7">
       <section id="gallery" class="view">
-        <h1 style="text-align: center">On Paper</h1>
+        <h1>On Paper</h1>
         <div class="container">
           <div class="row">
             <div class="col-sm">
@@ -133,22 +135,9 @@
               </div> 
             </div>
           </div>
-
-          <div class="grey-text col-md-12 text-center">
-            <h3 class="white-text mb-3"><strong>GODA TATTOO ARTIST</strong></h3>
-            <div class="biography">
-              <p>
-                Gonzalo Damian Lopez aka GODA was already in his 19's a professional tattoo artist
-                from Montevideo he moved to Rio de Janeiro and nowadays he is based in Berlin.
-              </p>
-              <p>
-                GODA is member of several tattoo conventions all over Latin America and Europe.
-              </p>
-            </div>
-          </div>
       </section>
       <section id="on-skin" class="view">
-        <h1 style="text-align: center">On Skin</h1>
+        <h1>On Skin</h1>
         <div class="container">
           <div class="row">
             <div class="col-sm">
@@ -281,9 +270,14 @@
         pager: true,
         download: false
       }
-$(document).ready(function() {
-  $('.js-images').lightGallery(options);
-});
+      $(document).ready(function() {
+        $('.js-images').lightGallery(options);
+      });
+      $(".jumbotron").css({ height: $(window).height() + "px" });
+
+      $(window).on("resize", function() {
+        $(".jumbotron").css({ height: $(window).height() + "px" });
+      });
     </script>
 
     <script>
