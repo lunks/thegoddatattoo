@@ -76,7 +76,7 @@
           <div class="row">
             <div class="col-sm">
               <div class="image-gallery">
-                <ul id="lightgallery">
+                <ul class="js-images">
                   <li data-src="picgodatat/drawtigerfaceok.jpg">
                     <a href="#">
                       <img class="img-responsive" src="picgodatat/drawtigerfaceok.jpg">
@@ -136,27 +136,24 @@
 
           <div class="grey-text col-md-12 text-center">
             <h3 class="white-text mb-3"><strong>GODA TATTOO ARTIST</strong></h3>
-            <p>
-              Gonzalo Damian Lopez aka GODA <br>
-              was already in his 19's<br>
-              a professional tattoo artist <br>
-              from Montevideo he moved to <br>
-              Rio de Janeiro and nowadays <br>
-              he is based in Berlin.<br>
-              GODA is member of several tattoo conventions<br>
-              all over Latin America and Europe.
-            </p>
+            <div class="biography">
+              <p>
+                Gonzalo Damian Lopez aka GODA was already in his 19's a professional tattoo artist
+                from Montevideo he moved to Rio de Janeiro and nowadays he is based in Berlin.
+              </p>
+              <p>
+                GODA is member of several tattoo conventions all over Latin America and Europe.
+              </p>
+            </div>
           </div>
-
       </section>
-
       <section id="on-skin" class="view">
         <h1 style="text-align: center">On Skin</h1>
         <div class="container">
           <div class="row">
             <div class="col-sm">
               <div class="image-gallery">
-                <ul id="tattoo-pictures">
+                <ul class="images">
                   <li data-src="picgodatat/tatarmflowerline.jpg">
                     <a href="#">
                       <img class="img-responsive" src="picgodatat/tatarmflowerline.jpg">
@@ -241,7 +238,6 @@
                       <img class="img-responsive" src="picgodatat/tateaglelegjpg.jpg">
                     </a>
                   </li>
-
                 </ul>
               </div>
             </div>
@@ -252,25 +248,23 @@
       </section>
     </main>
     <footer class="page-footer font-small black">
-        <div class="container mt-5 mb-4 text-center text-md-center">
-          <div class="row">
-            <div class="col-md-12">
-              <h6 class="text-uppercase font-weight-bold">
-                Contact
-              </h6>
-              <hr
-                class="white accent-2 mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px;"
-                />
-              <p><i class="fas fa-home  mr-3"></i>Schmollerplatz 11, 12435, Berlin</p>
-              <p><i class="fas fa-envelope mr-3"></i>godatattoo@gmail.com</p>
-              <p><i class="fas fa-phone mr-3"></i> +49 01771879910</p>
-              <a href="https://www.instagram.com/gonzalotattoo/" target="_blank">
-                <i class="grey-text fab fa-3x fa-instagram"></i>
-              </a>
-            </div>
-          </div>
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h6 class="text-uppercase font-weight-bold">
+            Contact
+          </h6>
+          <hr
+            class="white accent-2 mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px;"
+            />
+          <p><i class="fas fa-home  mr-3"></i>Schmollerplatz 11, 12435, Berlin</p>
+          <p><i class="fas fa-envelope mr-3"></i>godatattoo@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i> +49 01771879910</p>
+          <a href="https://www.instagram.com/gonzalotattoo/" target="_blank">
+            <i class="grey-text fab fa-3x fa-instagram"></i>
+          </a>
         </div>
+      </div>
     </footer>
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -287,10 +281,9 @@
         pager: true,
         download: false
       }
-      $(document).ready(function() {
-        $('#lightgallery').lightGallery(options);
-        $('#tattoo-pictures').lightGallery(options);
-      });
+$(document).ready(function() {
+  $('.js-images').lightGallery(options);
+});
     </script>
 
     <script>
